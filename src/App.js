@@ -7,6 +7,7 @@ import ArrayHook from './components/ArrayHook';
 import DemoUE from './components/DemoUE';
 import DemoUEHooks from './components/DemoUEHooks';
 import DemoLastNode from './components/DemoLastNode';
+import {Routes,Route, Link} from 'react-router-dom';
 
 export const UserContext = React.createContext()
 
@@ -14,9 +15,21 @@ function App() {
   return (
     <div className="App">
       <h1>Hook</h1>
-      <UserContext.Provider value = "Sai">
+
+      <Routes>
+        <Route path ='/' element={<FirstHook/>}></Route>
+        <Route path ='/formshook' element={<FormsHook></FormsHook>}></Route>
+      </Routes>
+
+
+
+
+
+
+
+      {/* <UserContext.Provider value = "Sai">
         <DemoLastNode/>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
       
       {/* <FirstHook/> */}
       {/* <FormsHook/> */}

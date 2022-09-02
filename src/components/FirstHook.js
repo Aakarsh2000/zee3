@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Routes,Route, Link} from 'react-router-dom';
 
 export default function FirstHook() {
     const initialCount=0
@@ -11,7 +12,7 @@ export default function FirstHook() {
     }
   return (
     <div>
-        <h2>My count is {count}</h2>
+        <Link to="/formshook"><h2>My count is {count}</h2></Link>
       <button onClick={() => setCount(count+1)}>Counter INC</button>
       <button onClick={() => setCount(count-1)}>Counter DEC</button>
       <button onClick={() => setCount(initialCount)}>Counter RESET</button>
