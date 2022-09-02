@@ -4,6 +4,7 @@ import FirstHook from './components/FirstHook';
 import FormsHook from './components/FormsHook';
 import ArrayHook from './components/ArrayHook';
 import DemoUE from './components/DemoUE';
+import DemoUEHooks from './components/DemoUEHooks';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <FirstHook/> */}
       {/* <FormsHook/> */}
       {/* <ArrayHook/> */}
-      <DemoUE/>
+      {/* <DemoUE/> */}
+      <DemoUEHooks/>
     </div>
   );
 }
