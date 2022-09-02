@@ -3,6 +3,7 @@ import './App.css';
 import FirstHook from './components/FirstHook';
 import FormsHook from './components/FormsHook';
 import ArrayHook from './components/ArrayHook';
+import DemoUE from './components/DemoUE';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <h1>Hook</h1>
       {/* <FirstHook/> */}
       {/* <FormsHook/> */}
-      <ArrayHook/>
+      {/* <ArrayHook/> */}
+      <DemoUE/>
     </div>
   );
 }
